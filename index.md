@@ -8,7 +8,7 @@ hide_image: false
 cover: true
 ---
 
-## Salutem tibi ago, visitante!
+## Salutem tibi ago!
 
 In this page you will find a short bio and links to some projects
 of mine.
