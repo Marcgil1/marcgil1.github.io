@@ -51,6 +51,8 @@ menu:
     url:               /aboutme
   - title:             Projects
     url:               /projects
+  - title:             MIRAI
+    url:               /mirai
 
 # Add links to the footer.
 # Typically you'll want to link to your cookie- or privacy policy (if appliable), etc..
