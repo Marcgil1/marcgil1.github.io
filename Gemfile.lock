@@ -293,6 +293,7 @@ DEPENDENCIES
   duktape
   github-pages (~> 219)
   jekyll (~> 3.9.0)
+  jekyll-commonmark-ghpages
   jekyll-compose
   jekyll-default-layout
   jekyll-feed
