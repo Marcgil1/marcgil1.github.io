@@ -1,7 +1,6 @@
 ---
 title: "RL Algorithms"
-date: 2022-04-01T23:19:24-06:00
-layout: simple
+date: 2022-04-01
 draft: false
 ---
 
