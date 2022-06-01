@@ -1,4 +1,8 @@
-# About me
+---
+title: "About me"
+date: 2022-06-01
+draft: false
+---
 
 I’m currently a student for Mathematics and Computer Science at the University
 of Murcia, in Murcia, Spain.
