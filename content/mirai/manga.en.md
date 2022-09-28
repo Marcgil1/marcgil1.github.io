@@ -1,6 +1,6 @@
 ---
 title: "Lecture on the evolution of manga"
-date: 2022-03-12
+date: 2022-09-28
 tags: ["film"]
 layout: simple
 draft: false
