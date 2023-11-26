@@ -2,6 +2,7 @@
 title: "RL Algorithms"
 date: 2022-04-01
 draft: false
+showReadingTime: false
 ---
 
 You may find the project [here](https://github.com/marcgil1/rl_algorithms).

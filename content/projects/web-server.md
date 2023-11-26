@@ -2,6 +2,8 @@
 title: "Web server"
 date: 2021-04-10
 draft: false
+showTableOfContents: true
+showReadingTime: false
 ---
 
 You may find this project

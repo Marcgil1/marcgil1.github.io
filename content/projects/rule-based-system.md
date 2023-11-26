@@ -2,6 +2,8 @@
 title: "Rule-Based System"
 date: 2022-06-28
 draft: false
+showTableOfContents: true
+showReadingTime: false
 ---
 
 You may find this project [here](https://github.com/Marcgil1/rbs).
