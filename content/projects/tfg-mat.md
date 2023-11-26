@@ -16,7 +16,7 @@ Please, find the LaTeX source files for the thesis in the following
 [link](https://github.com/Marcgil1/tfg-mat-doc). You may also find the
 associated code [here](https://github.com/Marcgil1/tfg-mat-code). Even though
 this article is being writen and published in late 2023, the thesis was
-presented in June 2023, all code and source files dating from that time.
+presented in May 2023, all code and source files dating from that time.
 
 ## Introduction
 
