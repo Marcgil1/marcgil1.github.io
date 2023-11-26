@@ -11,7 +11,7 @@
     weight = 3
 
 [[main]]
-    name = "MIRAI"
+    name = "Mirai"
     pageRef = "mirai"
     weight = 4
 
