@@ -20,8 +20,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="theme-color" content="rgb(255,255,255)" />
   
-  <title>Web Server &middot; Mark&#39;s Website</title>
-    <meta name="title" content="Web Server &middot; Mark&#39;s Website" />
+  <title>Option Pricer &middot; Mark&#39;s Website</title>
+    <meta name="title" content="Option Pricer &middot; Mark&#39;s Website" />
   
   
   
@@ -62,7 +62,7 @@
   
   
   
-  <link rel="canonical" href="https://marcgil1.github.io/projects/web-server/" />
+  <link rel="canonical" href="https://marcgil1.github.io/projects/opiton-pricer/" />
   
   
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
@@ -76,15 +76,15 @@
   
   
   
-  <meta property="og:title" content="Web Server" />
+  <meta property="og:title" content="Option Pricer" />
 <meta property="og:description" content="You may find this project here." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://marcgil1.github.io/projects/web-server/" /><meta property="article:section" content="projects" />
-<meta property="article:published_time" content="2021-04-10T00:00:00+00:00" />
-<meta property="article:modified_time" content="2021-04-10T00:00:00+00:00" />
+<meta property="og:url" content="https://marcgil1.github.io/projects/opiton-pricer/" /><meta property="article:section" content="projects" />
+<meta property="article:published_time" content="2023-12-20T00:00:00+00:00" />
+<meta property="article:modified_time" content="2023-12-20T00:00:00+00:00" />
 
   <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Web Server"/>
+<meta name="twitter:title" content="Option Pricer"/>
 <meta name="twitter:description" content="You may find this project here."/>
 
   
@@ -93,26 +93,26 @@
     "@context": "https://schema.org",
     "@type": "Article",
     "articleSection": "",
-    "name": "Web Server",
-    "headline": "Web Server",
+    "name": "Option Pricer",
+    "headline": "Option Pricer",
     
     "abstract": "You may find this project here.",
     "inLanguage": "en",
-    "url" : "https:\/\/marcgil1.github.io\/projects\/web-server\/",
+    "url" : "https:\/\/marcgil1.github.io\/projects\/opiton-pricer\/",
     "author" : {
       "@type": "Person",
       "name": "Marcos Gil Espinosa"
     },
-    "copyrightYear": "2021",
-    "dateCreated": "2021-04-10T00:00:00\u002b00:00",
-    "datePublished": "2021-04-10T00:00:00\u002b00:00",
+    "copyrightYear": "2023",
+    "dateCreated": "2023-12-20T00:00:00\u002b00:00",
+    "datePublished": "2023-12-20T00:00:00\u002b00:00",
     
-    "dateModified": "2021-04-10T00:00:00\u002b00:00",
+    "dateModified": "2023-12-20T00:00:00\u002b00:00",
     
     
     
     "mainEntityOfPage": "true",
-    "wordCount": "840"
+    "wordCount": "203"
   }
   </script>
 
@@ -237,7 +237,7 @@
     <header class="max-w-prose">
       
       <h1 class="mt-0 text-4xl font-extrabold text-neutral-900 dark:text-neutral">
-        Web Server
+        Option Pricer
       </h1>
       <div class="mt-8 mb-12 text-base text-neutral-500 dark:text-neutral-400 print:hidden">
         
@@ -270,7 +270,7 @@
   <div class="flex flex-row flex-wrap items-center">
     
     
-      <time datetime="2021-04-10 00:00:00 &#43;0000 UTC">10 April 2021</time>
+      <time datetime="2023-12-20 00:00:00 &#43;0000 UTC">20 December 2023</time>
     
 
     
@@ -286,114 +286,26 @@
     </header>
     <section class="flex flex-col max-w-full mt-0 prose dark:prose-invert lg:flex-row">
       
-        <div class="order-first px-0 lg:order-last lg:max-w-xs lg:ps-8">
-          <div class="toc pe-5 print:hidden lg:sticky lg:top-10">
-            <details open class="-ms-5 mt-0 overflow-hidden rounded-lg ps-5">
-  <summary
-    class="-ms-5 block cursor-pointer bg-neutral-100 py-1 ps-5 text-lg font-semibold text-neutral-800 dark:bg-neutral-700 dark:text-neutral-100 lg:hidden"
-  >
-    Table of Contents
-  </summary>
-  <div class="-ms-5 border-s border-dotted border-neutral-300 py-2 ps-5 dark:border-neutral-600">
-    <nav id="TableOfContents">
-  <ul>
-    <li><a href="#introduction">Introduction</a></li>
-    <li><a href="#how-to-execute-the-server">How to execute the server</a></li>
-    <li><a href="#a-comment-on-the-implementation">A comment on the implementation</a>
-      <ul>
-        <li><a href="#modularity">Modularity</a></li>
-        <li><a href="#unit-testing">Unit Testing</a></li>
-        <li><a href="#logging">Logging</a></li>
-      </ul>
-    </li>
-    <li><a href="#further-work">Further work</a></li>
-  </ul>
-</nav>
-  </div>
-</details>
-
-          </div>
-        </div>
-      
       <div class="min-w-0 min-h-0 max-w-prose grow">
         <p>You may find this project
-<a href="https://github.com/Marcgil1/web_server" target="_blank" rel="noreferrer">here</a>.</p>
-<p>It was developed for a networking course in my CS bachelors at the begining of
-2021, even though I&rsquo;m making it public in 2023. It being developed 2 years ago
-means that code quality, even though decent, could be better. In particular,
-functions should follow the 1-screen rule (all their code should fit within 1
-screen), and thus the present ones should further subdivide their functionality
-amongst several other subprocedures. Furthermore, C being C, Valgrind should be
-used for checking whether there are any memory leaks. Despite all of this, the
-code itself is quite neat and easy to read. I hope that the following
-introduction to the project, as well as the code itself, will support this
-assertion.</p>
-<h2 id="introduction" class="relative group">Introduction <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#introduction" aria-label="Anchor">#</a></span></h2><p>The present project aims to develop a simple, yet functional, web server. For
-this matter, the server includes capabilities for handling <code>GET</code> request, code
-being modular enough for easily being extended to handle other request types.</p>
-<p>In its current form, the code consists of (1) an entry point listening to the
-relevan socket and reading information; (2) an HTTP module for parsing HTTP
-requests; (3) a debug module including functionality for creating logs during
-the execution of the server; and (4) a resource folder that is to be input as
-a parameter to the server executable and that contains the web content to be
-served. This content may have any MIME type whatsoever, and the default content
-stored in <code>content/web</code> contains a sample web page including HTML, CSS and JS
-files, as well as a <em>favicon</em> and a couple of images.</p>
-<p>Furthermore, this project abides by the requirements of the course for which it
-was developed, which were for it to be implemented in ANSI C, and to store a
-cookie in the user&rsquo;s browser holding the number of times the webpage was
-visited. Should the user visit the webpage more than this number of times,
-an error message would be sent as response.</p>
-<h2 id="how-to-execute-the-server" class="relative group">How to execute the server <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#how-to-execute-the-server" aria-label="Anchor">#</a></span></h2><p>In order to execute the server, clone the repository linked
-<a href="https://github.com/Marcgil1/web_server" target="_blank" rel="noreferrer">above</a>, and execute <code>make build</code> and
-<code>make start</code> this will build the program and execute it over the 8080 port
-serving the sample webpage stored in <code>resources/web</code>. If you want the server to
-run on any other port or to server content in some other folder, just run <code>make build</code> and then call <code>build/out/main.out [port] [folder]</code>. Logs created during
-execution are stored in <code>resources/log/webserver.log</code>.</p>
-<p>The current makefile also includes functionality for running unit tests on the
-coder. For this matter, run <code>make build_test</code> and <code>make test</code>.</p>
-<h2 id="a-comment-on-the-implementation" class="relative group">A comment on the implementation <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#a-comment-on-the-implementation" aria-label="Anchor">#</a></span></h2><h3 id="modularity" class="relative group">Modularity <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#modularity" aria-label="Anchor">#</a></span></h3><p>An effort has been made to separate the logical functionality of the code
-between different modules. In particular, all functionality for representing and
-parsing HTTP requests has been abstracted into an <code>http</code> module. This enables
-separation of concerns and facilitates unit testing. Furthermore, the chosen
-approach of structuring the module around the processing of three data types,
-<code>http_req_t</code>, <code>http_res_t</code>, and <code>http_cookie_t</code>, in addition to being
-conceptually pleasant, lends itself to a very OOP style. Of course, to the
-extent to which C allows.</p>
-<p>If further work were to be carried out on the project, one further milestone in
-this direction would be to abstract all the socket operations into a <code>server</code>
-module, which would also offer a good opportunity for refining that code.
-Furthermore, it would be nice to investigate whether any C libraries allow
-mocking the socket functionality, since this would greatly simplify testing of
-this proposed new module.</p>
-<h3 id="unit-testing" class="relative group">Unit Testing <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#unit-testing" aria-label="Anchor">#</a></span></h3><p>Unit tests have been implemented for code in the <code>http</code> module leveraging the
-<a href="https://github.com/ThrowTheSwitch/Unity" target="_blank" rel="noreferrer">UNITY unit testing library</a>. This is a
-particularly neat and light-weight library whose only requirement on the testing
-code is to start it by calling <code>UNITY_BEGIN</code> in a main function, and then
-defining and running tests with the macro <code>RUN_TEST</code>.</p>
-<h3 id="logging" class="relative group">Logging <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#logging" aria-label="Anchor">#</a></span></h3><p>All logging functionality has been abstracted into a <code>debug</code> module offering
-<code>dg_log</code>, <code>dg_wrn</code> and <code>dg_err</code>-level logging. Also, it was decided that this
-module would hold the logging file as a global variable. This choice was taken
-with the following considerations in mind:</p>
-<ol>
-<li>This approach leads to a particularly simple implementation; its only
-overhead other than calling the log functions being indicating a path to the
-log file and closing it once finished.</li>
-<li>Should the server become parallel (which is currently not), this approach
-would lead to race conditions when writing the logs, since the logging file
-would then be a shared resource. Should one want to make this server
-parallel, some access control mechanism would have to be implemented in order
-to avoid race conditions.</li>
-</ol>
-<h2 id="further-work" class="relative group">Further work <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#further-work" aria-label="Anchor">#</a></span></h2><p>I can see three main lines over which this project may be extended. Roughly in
-order of importance, these would be:</p>
-<ol>
-<li>Making the code more modular by abstracting all external communication into a
-<code>server</code> module.</li>
-<li>Extend the code to also handle other types of HTTP requests.</li>
-<li>Make the server parallel, by holding a pool of threads to be assigned to
-specific requests, so that several users may be served concurrently.</li>
-</ol>
+<a href="https://github.com/Marcgil1/option-pricer" target="_blank" rel="noreferrer">here</a>.</p>
+<h1 id="introduction" class="relative group">Introduction <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#introduction" aria-label="Anchor">#</a></span></h1><p>This project implements pricing algorithms for European and American options,
+both based on a Monte Carlo approach. The project is tailored to be used in the
+HPC facilities of the University of Luxembourg (supercomputers nicknamed Iris
+and Aion). However, simple modifications of scripts within the mk folder should
+make it possible to build and execute this code in other computing clusters or
+even on a PC provided with OMP and MPI installations.</p>
+<h1 id="how-to-execute-the-code" class="relative group">How to execute the code <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#how-to-execute-the-code" aria-label="Anchor">#</a></span></h1><p>Supposing a standard computing cluster architecture in which jobs are submitted
+via Slurm from a common entry point to execution nodes, running <code>mk/submit</code> should
+submit a job for building and executing the program. Please be sure to tweak
+mk/batch-job to match the specific requirements of your computing cluster.
+Particularly, you should modify the module load commands to match those
+available in your cluster. These just load a gcc compiler toolchain, OMP, MPI,
+and Laplack.</p>
+<p>For executing this project on a PC, please make sure that the aforementioned
+libraries are installed, then just remove the module-loading operations from
+<code>mk/batch-job</code> and execute this script. Set <code>OMP_NUM_THREADS=1</code> and substitute
+<code>$SLURM_NTASKS</code> for the number of cores you want to allocate for this job.</p>
 
       </div>
     </section>
@@ -462,27 +374,27 @@ specific requests, so that several users may be served concurrently.</li>
       <div class="flex justify-between pt-3">
         <span>
           
-        </span>
-        <span>
-          
-            <a class="group flex text-right" href="/projects/rl-algorithms/">
+            <a class="group flex" href="/projects/tfg-inf/">
+              <span
+                class="me-2 text-neutral-700 transition-transform group-hover:-translate-x-[2px] group-hover:text-primary-600 dark:text-neutral dark:group-hover:text-primary-400"
+                ><span class="ltr:inline rtl:hidden">&larr;</span
+                ><span class="ltr:hidden rtl:inline">&rarr;</span></span
+              >
               <span class="flex flex-col">
                 <span
                   class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
-                  >RL Algorithms</span
+                  >Computer Science End-of-Degree Thesis</span
                 >
                 <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
                   
-                    <time datetime="2022-04-01 00:00:00 &#43;0000 UTC">1 April 2022</time>
+                    <time datetime="2023-05-22 00:00:00 &#43;0000 UTC">22 May 2023</time>
                   
                 </span>
               </span>
-              <span
-                class="ms-2 text-neutral-700 transition-transform group-hover:-translate-x-[2px] group-hover:text-primary-600 dark:text-neutral dark:group-hover:text-primary-400"
-                ><span class="ltr:inline rtl:hidden">&rarr;</span
-                ><span class="ltr:hidden rtl:inline">&larr;</span></span
-              >
             </a>
+          
+        </span>
+        <span>
           
         </span>
       </div>
